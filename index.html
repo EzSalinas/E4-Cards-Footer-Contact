@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/hero.css" />
+    <link rel="stylesheet" href="css/about.css" />
+    <link rel="stylesheet" href="css/card.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/contact.css" />
+    <title>E4 - Challenge Landing Page - Cards + Contact + Footer</title>
+  </head>
+
+  <body>
+    <!--Landing-->
+    <header>
+      <a href="index.html">
+        <img src="assets/logo.png" alt="Logo de Tech&Stuff" />
+      </a>
+
+      <nav id="last">
+        <a href="#">Sobre Nosotros</a>
+        <a href="https://youtube.com" target="_blank">Youtube</a>
+        <a href="#" target="_blank">Trabaja con nosotros</a>
+        <a href="#">Contactanos</a>
+      </nav>
+
+      <nav id="first">
+        <a href="#">Nuestros Productos</a>
+        <a href="#">Nuevos Lanzamientos</a>
+        <a href="#">Preventa Exclusiva</a>
+        <a href="#">Ofertas</a>
+      </nav>
+    </header>
+
+    <!-- Hero -->
+    <main id="hero">
+      <article id="content">
+        <h2>Descubre los mejores productos de diferentes partes del mundo</h2>
+        <p>
+          Sumérgete en una experiencia de compra única con nuestra tienda en
+          línea. Te ofrecemos una cuidadosa selección de productos exclusivos de
+          todo el mundo, traídos directamente a tu puerta. Desde las últimas
+          innovaciones tecnológicas hasta las curiosidades vistas en redes
+          sociales.
+        </p>
+        <nav>
+          <a href="#">Tech</a>
+          <a href="#">Stuff</a>
+          <a href="#">Novedades</a>
+        </nav>
+      </article>
+      <picture id="image"><img src="assets/tech.webp" alt="" /></picture>
+    </main>
+
+    <!--Cards-->
+    <section id="card">
+      <header>
+        <h2>Ventajas de comprar en <strong>Tech&Stuff</strong></h2>
+      </header>
+      <ul>
+        <li>
+          <picture>
+            <img src="assets/card.jpg" alt="" />
+          </picture>
+          <h4>Facilidades de pago</h4>
+          <p>Aceptamos todas las tarjetas de crédito y débito.</p>
+        </li>
+        <li>
+          <picture>
+            <img src="assets/high-4259761_1280.webp" alt="" />
+          </picture>
+          <h4>No busques más</h4>
+          <p>
+            ¿Te gustó un artículo que no podes encontrar en ningún otro lugar?
+            Contactanos y haremos lo posible para traerlo.
+          </p>
+        </li>
+        <li>
+          <picture>
+            <img
+              src="assets/relax-black-glyph-icon-man-sitting-in-relaxed-pose-human-taking-break-from-work-person-sitting-in-armchair-with-le.jpg"
+              alt="" />
+          </picture>
+          <h4>Comprá y relajate</h4>
+          <p>
+            Olvidate de trámites aduaneros y seguimiento del producto, te
+            mantendremos informado sobre cada etapa del envío.
+          </p>
+        </li>
+        <li>
+          <picture>
+            <img src="assets/transp.png" alt="" />
+          </picture>
+          <h4>Transparencia y confianza</h4>
+          <p>
+            Información clara y detallada sobre cada producto, incluyendo
+            especificaciones, reseñas de clientes y opiniones de expertos.
+          </p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- About -->
+    <section id="about">
+      <header>
+        <h3>Experiencia de usuario</h3>
+      </header>
+      <article>
+        <p>
+          En <b>TECH & STUFF</b>, nos dedicamos a ofrecerte una experiencia de
+          compra excepcional y sin complicaciones. Desde el momento en que
+          ingresas a nuestra plataforma, te sumerges en un mundo de productos
+          exclusivos de todas partes del mundo, seleccionados especialmente para
+          ti.
+        </p>
+      </article>
+    </section>
+
+    <!--Contact-->
+    <section id="contact">
+      <header>
+        <h3>Contactanos</h3>
+      </header>
+      <form action="">
+        <label for="nombre">Nombre y apellido:</label>
+        <input
+          type="text"
+          id="nombre"
+          placeholder="Ingrese su nombre"
+          required />
+
+        <label for="correo">Correo:</label>
+        <input
+          type="email"
+          id="correo"
+          placeholder="Ingrese su correo"
+          required />
+
+        <label for="texto">Consulta y/o sugerencia: </label>
+        <textarea
+          id="texto"
+          cols="30"
+          rows="10"
+          placeholder="Escribe aqui tu comentario"
+          minlength="5"
+          maxlength="200">
+        </textarea>
+        <button type="submit">Enviar formulario</button>
+      </form>
+    </section>
+
+    <!--Footer-->
+    <footer id="footer">
+      <h5>
+        Copyright Tech&Stuff - 2097452134412 - 2024. Todos los derechos
+        reservados. Para reclamos <a href="#">ingresá acá</a>
+      </h5>
+    </footer>
+  </body>
+</html>

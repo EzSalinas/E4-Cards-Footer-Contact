@@ -1,0 +1,84 @@
+body > header {
+  background-color: white;
+  display: flex; /*Los elementos se colocan uno al lado del otro*/
+  justify-content: center;
+  align-items: center;
+  width: 100vw; /*PARA QUE OCUPE EL ANCHO TOTAL DE LA PANTALLA*/
+  position: fixed; /*PARA QUE EL ENCABEZADO SE MANTENGA ARRIBA*/
+  top: 0;
+  left: 0;
+  padding: 0;
+  z-index: 9; /*PARA QUE NINGÚN ELEMENTO CORTE SU VISUALIZACIÓN*/
+}
+
+body > header > a {
+  display: inline-flex;
+  justify-content: center;
+  order: 1;
+}
+
+body > header > a img {
+  display: flex;
+  width: 60%;
+  height: 50%;
+  object-fit: contain;
+}
+
+body > header > nav {
+  display: flex;
+  flex: 1; /*NAV OCUPA TODO EL ANCHO DISPONIBLE SALVO EL LOGO*/
+  justify-content: center; /*LOS ELEMENTOS DE VAN AL FINAL*/
+  gap: 1rem;
+}
+
+body > header > nav a {
+  text-decoration: none;
+  color: gray;
+}
+
+body > header > nav a:first-child {
+  /*EL PRIMER <A> DE <NAV> */
+  font-weight: 600;
+}
+
+#first {
+  display: flex;
+  flex: 1;
+  order: 0;
+  gap: 2rem;
+}
+
+#last {
+  display: flex;
+  justify-content: center;
+  flex: 1;
+  order: 2;
+  gap: 3rem;
+}
+
+/*
+body > header > form {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0.25rem 1rem;
+}
+
+
+body > header > form label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+body > header > form label svg {
+  width: auto;
+  height: 100%;
+  fill: var(--text-white);
+}
+
+#btnCart {
+  display: none; OCULTAR LA CAJITA DEL CHECKBOX
+}
+
+*/
